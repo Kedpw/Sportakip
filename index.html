@@ -658,7 +658,7 @@ const IL = (function(){
   return {DEF, svg, ids:()=>Object.keys(DEF)};
 })();
 /* ILLUS-END */
-const IMGS = new Set(['squat_g','squat_h','bench_g','bench_h','row_g','row_h','rdl_g','ohp_g','ohp_h','pull_g']);
+const IMGS = new Set(["bench_g", "bench_h", "bi_g", "bi_h", "calf", "face_g", "hip_g", "hip_h", "incline_g", "incline_h", "lat", "legcurl_g", "legcurl_h", "legext_g", "legext_h", "legraise_g", "lunge", "ohp_g", "ohp_h", "plank", "pull_g", "pull_h", "pullup", "rdl_g", "row_g", "row_h", "squat_g", "squat_h", "tri_g", "tri_h"]);
 function illId(key, p){ const k = key+'_'+(p.yer==='home'?'h':'g'); return IL.DEF[k] ? k : (IL.DEF[key] ? key : null); }
 const AVOID = [
   {k:'egg', t:'Yumurta', ing:['Yumurta'], words:['yumurta','omlet','menemen']},
